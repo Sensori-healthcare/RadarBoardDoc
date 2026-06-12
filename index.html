@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sensori 主副雷达板使用说明</title>
+<title>Sensori ä¸»å¯é·è¾¾æ¿ä½¿ç¨è¯´æ</title>
 <style>
-  /* ── Reset & Base ── */
+  /* ââ Reset & Base ââ */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
@@ -15,7 +15,7 @@
     background: #f5f6f8;
   }
 
-  /* ── Page wrapper ── */
+  /* ââ Page wrapper ââ */
   .page {
     max-width: 820px;
     margin: 32px auto;
@@ -32,7 +32,7 @@
     .footer { padding: 14px 20px; }
   }
 
-  /* ── Header ── */
+  /* ââ Header ââ */
   .header {
     background: linear-gradient(135deg, #1a3a5c 0%, #2c6fad 100%);
     color: #fff;
@@ -42,10 +42,10 @@
   .header h1 { font-size: 28px; font-weight: 700; line-height: 1.3; }
   .header p { font-size: 13px; opacity: .75; margin-top: 8px; }
 
-  /* ── Content ── */
+  /* ââ Content ââ */
   .content { padding: 36px 48px 48px; }
 
-  /* ── Sections ── */
+  /* ââ Sections ââ */
   .section { margin-bottom: 40px; }
   .section-title {
     font-size: 18px;
@@ -63,7 +63,7 @@
   }
   p { margin-bottom: 10px; }
 
-  /* ── Images (normal) ── */
+  /* ââ Images (normal) ââ */
   .img-block { text-align: center; margin: 16px 0; }
   .img-block img {
     max-width: 100%;
@@ -74,7 +74,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,.08);
   }
 
-  /* ── Images (rotated 90° CCW) ── */
+  /* ââ Images (rotated 90Â° CCW) ââ */
   .img-block-rotated {
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@
     text-align: center;
   }
 
-  /* ── LED table ── */
+  /* ââ LED table ââ */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -117,7 +117,7 @@
   .dot-red    { background: #e74c3c; }
   .dot-green  { background: #9bc04b; }
 
-  /* ── Steps ── */
+  /* ââ Steps ââ */
   .steps { counter-reset: step; }
   .step {
     display: flex;
@@ -137,7 +137,7 @@
   }
   .step-body { flex: 1; padding-top: 4px; }
 
-  /* Step title — block; all other <strong> inside step-body remain inline */
+  /* Step title â block; all other <strong> inside step-body remain inline */
   .step-title {
     font-size: 15px;
     font-weight: 700;
@@ -146,7 +146,7 @@
     margin-bottom: 6px;
   }
 
-  /* ── Callouts ── */
+  /* ââ Callouts ââ */
   .note {
     background: #f0f4f8;
     border-left: 4px solid #2c6fad;
@@ -185,7 +185,7 @@
     margin: 6px 0;
   }
 
-  /* ── Video ── */
+  /* ââ Video ââ */
   .video-wrap { margin: 16px 0; }
   .video-wrap video {
     width: 100%;
@@ -197,7 +197,7 @@
     display: block;
   }
 
-  /* ── APK download button ── */
+  /* ââ APK download button ââ */
   .apk-btn {
     display: inline-block;
     background: #27ae60;
@@ -211,10 +211,10 @@
   }
   .apk-btn:hover { background: #1e8449; }
 
-  /* ── Divider ── */
+  /* ââ Divider ââ */
   hr { border: none; border-top: 1px solid #e8e8e8; margin: 32px 0; }
 
-  /* ── Footer ── */
+  /* ââ Footer ââ */
   .footer {
     background: #f5f6f8;
     border-top: 1px solid #e8e8e8;
@@ -224,7 +224,7 @@
     text-align: center;
   }
 
-  /* ── Print button (screen only) ── */
+  /* ââ Print button (screen only) ââ */
   .print-btn-wrap { text-align: right; margin-bottom: -8px; margin-top: -8px; }
   .print-btn {
     background: #2c6fad;
@@ -238,7 +238,7 @@
   }
   .print-btn:hover { background: #1a3a5c; }
 
-  /* ── Print styles ── */
+  /* ââ Print styles ââ */
   @media print {
     body { background: #fff; }
     .page { box-shadow: none; border-radius: 0; margin: 0; max-width: 100%; }
@@ -257,80 +257,80 @@
 
   <!-- Header -->
   <div class="header">
-    <div class="logo">SENSORI · PIONEERING SCIENCE, ADVANCING CARE</div>
-    <h1>Sensori 主副雷达板<br>使用说明</h1>
-    <p>适用于宿舍床接入合作方 &nbsp;|&nbsp; v1.0 &nbsp;|&nbsp; 2026</p>
+    <div class="logo">SENSORI Â· PIONEERING SCIENCE, ADVANCING CARE</div>
+    <h1>Sensori ä¸»å¯é·è¾¾æ¿<br>ä½¿ç¨è¯´æ</h1>
+    <p>éç¨äºå®¿èåºæ¥å¥åä½æ¹ &nbsp;|&nbsp; v1.0 &nbsp;|&nbsp; 2026</p>
   </div>
 
   <div class="content">
 
     <div class="print-btn-wrap">
-      <button class="print-btn" onclick="window.print()">🖨️ 打印 / 导出 PDF</button>
+      <button class="print-btn" onclick="window.print()">ð¨ï¸ æå° / å¯¼åº PDF</button>
     </div>
 
-    <!-- ══════════════════════════════════════════════ -->
-    <!-- 一、主副雷达板介绍                            -->
-    <!-- ══════════════════════════════════════════════ -->
+    <!-- ââââââââââââââââââââââââââââââââââââââââââââââ -->
+    <!-- ä¸ãä¸»å¯é·è¾¾æ¿ä»ç»                            -->
+    <!-- ââââââââââââââââââââââââââââââââââââââââââââââ -->
     <div class="section">
-      <div class="section-title">一、主副雷达板介绍</div>
+      <div class="section-title">ä¸ãä¸»å¯é·è¾¾æ¿ä»ç»</div>
 
-      <p>Sensori 主副雷达板是一套基于毫米波雷达的非接触式生命体征检测模块，可实时监测床上人员的<strong>呼吸频率、心率</strong>，以及<strong>在床状态</strong>（无人 / 静止 / 运动）。</p>
+      <p>Sensori ä¸»å¯é·è¾¾æ¿æ¯ä¸å¥åºäºæ¯«ç±³æ³¢é·è¾¾çéæ¥è§¦å¼çå½ä½å¾æ£æµæ¨¡åï¼å¯å®æ¶çæµåºä¸äººåç<strong>å¼å¸é¢çãå¿ç</strong>ï¼ä»¥å<strong>å¨åºç¶æ</strong>ï¼æ äºº / éæ­¢ / è¿å¨ï¼ã</p>
 
-      <!-- 1. 主副板区分 -->
-      <div class="sub-title">1. 主副板区分</div>
-      <p>板子背面的贴纸上标注了"<strong>M 主</strong>"（主板）和"<strong>S 副</strong>"（副板），注意区分。</p>
+      <!-- 1. ä¸»å¯æ¿åºå -->
+      <div class="sub-title">1. ä¸»å¯æ¿åºå</div>
+      <p>æ¿å­èé¢çè´´çº¸ä¸æ æ³¨äº"<strong>M ä¸»</strong>"ï¼ä¸»æ¿ï¼å"<strong>S å¯</strong>"ï¼å¯æ¿ï¼ï¼æ³¨æåºåã</p>
 
-      <!-- 图1：背面（向左旋转90°） -->
+      <!-- å¾1ï¼èé¢ï¼åå·¦æè½¬90Â°ï¼ -->
       <div class="img-block-rotated">
-        <img src="背面.jpg" alt="主副板背面贴纸区分">
+        <img src="èé¢.jpg" alt="ä¸»å¯æ¿èé¢è´´çº¸åºå">
       </div>
-      <div class="img-caption">▲ 背面贴纸：左为主板（M 主），右为副板（S 副）</div>
+      <div class="img-caption">â² èé¢è´´çº¸ï¼å·¦ä¸ºä¸»æ¿ï¼M ä¸»ï¼ï¼å³ä¸ºå¯æ¿ï¼S å¯ï¼</div>
 
-      <!-- 2. 主副板连接 -->
-      <div class="sub-title">2. 主副板连接</div>
-      <p>用随附的 <strong>C2C（Type-C 对 Type-C）连接线</strong>，将主板和副板<strong>左下角标有"USB"字样的 Type-C 接口</strong>相互连接。</p>
+      <!-- 2. ä¸»å¯æ¿è¿æ¥ -->
+      <div class="sub-title">2. ä¸»å¯æ¿è¿æ¥</div>
+      <p>ç¨ééç <strong>C2Cï¼Type-C å¯¹ Type-Cï¼è¿æ¥çº¿</strong>ï¼å°ä¸»æ¿åå¯æ¿<strong>å·¦ä¸è§æ æ"USB"å­æ ·ç Type-C æ¥å£</strong>ç¸äºè¿æ¥ã</p>
 
-      <!-- 图2：主副板连接（正常方向） -->
+      <!-- å¾2ï¼ä¸»å¯æ¿è¿æ¥ï¼æ­£å¸¸æ¹åï¼ -->
       <div class="img-block">
-        <img src="主副板连接.jpg" alt="主副板正面连接示意">
+        <img src="ä¸»å¯æ¿è¿æ¥.jpg" alt="ä¸»å¯æ¿æ­£é¢è¿æ¥ç¤ºæ">
       </div>
-      <div class="img-caption">▲ 主副板正面连接示意（左下角 USB 接口对接）</div>
+      <div class="img-caption">â² ä¸»å¯æ¿æ­£é¢è¿æ¥ç¤ºæï¼å·¦ä¸è§ USB æ¥å£å¯¹æ¥ï¼</div>
 
-      <!-- 3. 供电 -->
-      <div class="sub-title">3. 供电</div>
-      <p>供电线（<strong>5V Type-C</strong>）插在主板或副板任意一块均可，通电后设备自动运行。</p>
+      <!-- 3. ä¾çµ -->
+      <div class="sub-title">3. ä¾çµ</div>
+      <p>ä¾çµçº¿ï¼<strong>5V Type-C</strong>ï¼æå¨ä¸»æ¿æå¯æ¿ä»»æä¸ååå¯ï¼éçµåè®¾å¤èªå¨è¿è¡ã</p>
 
-      <!-- 图3：供电（向左旋转90°） -->
+      <!-- å¾3ï¼ä¾çµï¼åå·¦æè½¬90Â°ï¼ -->
       <div class="img-block-rotated">
-        <img src="供电.jpg" alt="供电示意">
+        <img src="ä¾çµ.jpg" alt="ä¾çµç¤ºæ">
       </div>
-      <div class="img-caption">▲ 供电示意图（蓝灯常亮 = 供电正常，红灯慢闪 = Wi-Fi 已连接）</div>
+      <div class="img-caption">â² ä¾çµç¤ºæå¾ï¼èç¯å¸¸äº® = ä¾çµæ­£å¸¸ï¼çº¢ç¯æ¢éª = Wi-Fi å·²è¿æ¥ï¼</div>
 
-      <!-- 4. 指示灯 -->
-      <div class="sub-title">4. 指示灯说明</div>
+      <!-- 4. æç¤ºç¯ -->
+      <div class="sub-title">4. æç¤ºç¯è¯´æ</div>
       <table>
         <thead>
-          <tr><th>指示灯</th><th>颜色</th><th>状态含义</th></tr>
+          <tr><th>æç¤ºç¯</th><th>é¢è²</th><th>ç¶æå«ä¹</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td>电源指示灯</td>
-            <td><span class="dot dot-blue"></span>蓝色</td>
-            <td>供电正常时常亮</td>
+            <td>çµæºæç¤ºç¯</td>
+            <td><span class="dot dot-blue"></span>èè²</td>
+            <td>ä¾çµæ­£å¸¸æ¶å¸¸äº®</td>
           </tr>
           <tr>
-            <td>网络状态指示灯</td>
-            <td><span class="dot dot-red"></span>红色</td>
+            <td>ç½ç»ç¶ææç¤ºç¯</td>
+            <td><span class="dot dot-red"></span>çº¢è²</td>
             <td>
-              Wi-Fi 已连接：<strong>慢闪</strong>（约1次/秒）<br>
-              进入配网模式：<strong>快闪</strong><br>
-              Wi-Fi 连接失败：常灭
+              Wi-Fi å·²è¿æ¥ï¼<strong>æ¢éª</strong>ï¼çº¦1æ¬¡/ç§ï¼<br>
+              è¿å¥éç½æ¨¡å¼ï¼<strong>å¿«éª</strong><br>
+              Wi-Fi è¿æ¥å¤±è´¥ï¼å¸¸ç­
             </td>
           </tr>
           <tr>
-            <td>MQTT 指示灯</td>
-            <td><span class="dot dot-green"></span>淡黄绿色</td>
-            <td>已建立 MQTT 连接时常亮</td>
+            <td>MQTT æç¤ºç¯</td>
+            <td><span class="dot dot-green"></span>æ·¡é»ç»¿è²</td>
+            <td>å·²å»ºç« MQTT è¿æ¥æ¶å¸¸äº®</td>
           </tr>
         </tbody>
       </table>
@@ -338,20 +338,20 @@
 
     <hr>
 
-    <!-- ══════════════════════════════════════════════ -->
-    <!-- 二、配网流程                                   -->
-    <!-- ══════════════════════════════════════════════ -->
+    <!-- ââââââââââââââââââââââââââââââââââââââââââââââ -->
+    <!-- äºãéç½æµç¨                                   -->
+    <!-- ââââââââââââââââââââââââââââââââââââââââââââââ -->
     <div class="section">
-      <div class="section-title">二、配网流程</div>
+      <div class="section-title">äºãéç½æµç¨</div>
 
-      <div class="note">ℹ️ 配网仅需对<strong>主板</strong>操作一次，副板无需单独配网。</div>
+      <div class="note">â¹ï¸ éç½ä»éå¯¹<strong>ä¸»æ¿</strong>æä½ä¸æ¬¡ï¼å¯æ¿æ éåç¬éç½ã</div>
 
       <div class="video-wrap">
         <video controls preload="metadata">
-          <source src="软件配网视频教程.mp4" type="video/mp4">
-          您的浏览器不支持视频播放，请直接打开 <strong>软件配网视频教程.mp4</strong> 文件观看。
+          <source src="è½¯ä»¶éç½è§é¢æç¨.mp4" type="video/mp4">
+          æ¨çæµè§å¨ä¸æ¯æè§é¢æ­æ¾ï¼è¯·ç´æ¥æå¼ <strong>è½¯ä»¶éç½è§é¢æç¨.mp4</strong> æä»¶è§çã
         </video>
-        <div class="img-caption" style="margin-top:8px;">▲ 配网操作视频教程</div>
+        <div class="img-caption" style="margin-top:8px;">â² éç½æä½è§é¢æç¨</div>
       </div>
 
       <br>
@@ -361,10 +361,10 @@
         <div class="step">
           <div class="step-num">0</div>
           <div class="step-body">
-            <span class="step-title">安装手机 App</span>
-            <p>在手机上安装 <strong>Sensori Pair</strong>（当前仅支持 Android）。</p>
-            <p>APK 安装包请联系我们获取：<a href="mailto:sensorihealthcare@gmail.com" style="color:#2c6fad;">sensorihealthcare@gmail.com</a></p>
-            <div class="note" style="margin-top:8px;">安装时如遇安全提示，请允许"安装未知来源应用"。</div>
+            <span class="step-title">å®è£ææº App</span>
+            <p>å¨ææºä¸å®è£ <strong>Sensori Pair</strong>ï¼å½åä»æ¯æ Androidï¼ã</p>
+            <p>APK å®è£åè¯·èç³»æä»¬è·åï¼<a href="mailto:sensorihealthcare@gmail.com" style="color:#2c6fad;">sensorihealthcare@gmail.com</a></p>
+            <div class="note" style="margin-top:8px;">å®è£æ¶å¦éå®å¨æç¤ºï¼è¯·åè®¸"å®è£æªç¥æ¥æºåºç¨"ã</div>
           </div>
         </div>
 
@@ -372,8 +372,8 @@
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
-            <span class="step-title">给模块供电</span>
-            <p>将 5V 电源接入主板或副板任意一个 Type-C 供电口，蓝色电源灯亮起即表示供电正常。</p>
+            <span class="step-title">ç»æ¨¡åä¾çµ</span>
+            <p>å° 5V çµæºæ¥å¥ä¸»æ¿æå¯æ¿ä»»æä¸ä¸ª Type-C ä¾çµå£ï¼èè²çµæºç¯äº®èµ·å³è¡¨ç¤ºä¾çµæ­£å¸¸ã</p>
           </div>
         </div>
 
@@ -381,12 +381,12 @@
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <span class="step-title">进入配网模式（主板）</span>
-            <p><strong>长按主板背面的 Wi-Fi 配网按键</strong>，直到主板红色网络状态指示灯<strong>快闪</strong>，表明已进入配网模式。</p>
-            <div class="warn">⚠ 同一时间仅让一台设备进入配网模式，避免干扰。</div>
+            <span class="step-title">è¿å¥éç½æ¨¡å¼ï¼ä¸»æ¿ï¼</span>
+            <p><strong>é¿æä¸»æ¿èé¢ç Wi-Fi éç½æé®</strong>ï¼ç´å°ä¸»æ¿çº¢è²ç½ç»ç¶ææç¤ºç¯<strong>å¿«éª</strong>ï¼è¡¨æå·²è¿å¥éç½æ¨¡å¼ã</p>
+            <div class="warn">â  åä¸æ¶é´ä»è®©ä¸å°è®¾å¤è¿å¥éç½æ¨¡å¼ï¼é¿åå¹²æ°ã</div>
             <div class="img-block" style="margin-top:12px;">
-              <img src="主板背面按钮.jpg" alt="主板背面Wi-Fi按钮" style="max-height:220px;">
-              <div class="img-caption">▲ 主板背面：左侧小按钮即为 Wi-Fi 配网键（标注"WIFI"）</div>
+              <img src="ä¸»æ¿èé¢æé®.jpg" alt="ä¸»æ¿èé¢Wi-Fiæé®" style="max-height:220px;">
+              <div class="img-caption">â² ä¸»æ¿èé¢ï¼å·¦ä¾§å°æé®å³ä¸º Wi-Fi éç½é®ï¼æ æ³¨"WIFI"ï¼</div>
             </div>
           </div>
         </div>
@@ -395,8 +395,8 @@
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <span class="step-title">打开 Sensori Pair 并开始配网</span>
-            <p>打开手机上的 Sensori Pair App，点击"<strong>开始配网</strong>"按钮。</p>
+            <span class="step-title">æå¼ Sensori Pair å¹¶å¼å§éç½</span>
+            <p>æå¼ææºä¸ç Sensori Pair Appï¼ç¹å»"<strong>å¼å§éç½</strong>"æé®ã</p>
           </div>
         </div>
 
@@ -404,8 +404,8 @@
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-body">
-            <span class="step-title">选择设备</span>
-            <p>App 会自动扫描并显示附近处于配网模式的设备，选择对应的主板设备。</p>
+            <span class="step-title">éæ©è®¾å¤</span>
+            <p>App ä¼èªå¨æ«æå¹¶æ¾ç¤ºéè¿å¤äºéç½æ¨¡å¼çè®¾å¤ï¼éæ©å¯¹åºçä¸»æ¿è®¾å¤ã</p>
           </div>
         </div>
 
@@ -413,8 +413,8 @@
         <div class="step">
           <div class="step-num">5</div>
           <div class="step-body">
-            <span class="step-title">输入设备验证码</span>
-            <p>当提示输入验证码时，输入：</p>
+            <span class="step-title">è¾å¥è®¾å¤éªè¯ç </span>
+            <p>å½æç¤ºè¾å¥éªè¯ç æ¶ï¼è¾å¥ï¼</p>
             <div><span class="code-badge">abcd1234</span></div>
           </div>
         </div>
@@ -423,9 +423,9 @@
         <div class="step">
           <div class="step-num">6</div>
           <div class="step-body">
-            <span class="step-title">选择 Wi-Fi 并输入密码</span>
-            <p>从列表中选择宿舍的 Wi-Fi 网络，输入密码后继续。</p>
-            <div class="note">注：当前仅支持 2.4GHz Wi-Fi 网络。</div>
+            <span class="step-title">éæ© Wi-Fi å¹¶è¾å¥å¯ç </span>
+            <p>ä»åè¡¨ä¸­éæ©å®¿èç Wi-Fi ç½ç»ï¼è¾å¥å¯ç åç»§ç»­ã</p>
+            <div class="note">æ³¨ï¼å½åä»æ¯æ 2.4GHz Wi-Fi ç½ç»ã</div>
           </div>
         </div>
 
@@ -433,8 +433,8 @@
         <div class="step">
           <div class="step-num">7</div>
           <div class="step-body">
-            <span class="step-title">配置 MQTT 服务地址</span>
-            <p>如视频所示，输入 <strong>mqtt://47.116.87.191:1883</strong>，然后点击"<strong>开始配网</strong>"。</p>
+            <span class="step-title">éç½® MQTT æå¡å°å</span>
+            <p>å¦è§é¢æç¤ºï¼è¾å¥ <strong>mqtt://47.116.87.191:1883</strong>ï¼ç¶åç¹å»"<strong>å¼å§éç½</strong>"ã</p>
           </div>
         </div>
 
@@ -442,13 +442,13 @@
         <div class="step">
           <div class="step-num">8</div>
           <div class="step-body">
-            <span class="step-title">等待配网完成</span>
+            <span class="step-title">ç­å¾éç½å®æ</span>
             <div class="success">
-              ✅ <strong>配网成功的标志：</strong><br>
-              · 红色网络状态指示灯<strong>慢闪</strong>（1次/秒）→ 已连上 Wi-Fi<br>
-              · 淡黄绿色 MQTT 指示灯<strong>常亮</strong> → 已建立 MQTT 连接
+              â <strong>éç½æåçæ å¿ï¼</strong><br>
+              Â· çº¢è²ç½ç»ç¶ææç¤ºç¯<strong>æ¢éª</strong>ï¼1æ¬¡/ç§ï¼â å·²è¿ä¸ Wi-Fi<br>
+              Â· æ·¡é»ç»¿è² MQTT æç¤ºç¯<strong>å¸¸äº®</strong> â å·²å»ºç« MQTT è¿æ¥
             </div>
-            <div class="note">若 Wi-Fi 指示灯常灭，可按主板复位键重启后等待几秒；如仍无法连接，请检查 Wi-Fi 密码或更换网络再试。</div>
+            <div class="note">è¥ Wi-Fi æç¤ºç¯å¸¸ç­ï¼å¯æä¸»æ¿å¤ä½é®éå¯åç­å¾å ç§ï¼å¦ä»æ æ³è¿æ¥ï¼è¯·æ£æ¥ Wi-Fi å¯ç ææ´æ¢ç½ç»åè¯ã</div>
           </div>
         </div>
 
@@ -458,8 +458,8 @@
   </div><!-- /content -->
 
   <div class="footer">
-    如有任何问题，请联系 Sensori 技术支持：sensorihealthcare@gmail.com
-    &nbsp;|&nbsp; 在线文档：<a href="https://sensorihealthcare.github.io/InBedDetectionDoc/" style="color:#2c6fad;">InBedDetectionDoc</a>
+    å¦æä»»ä½é®é¢ï¼è¯·èç³» Sensori ææ¯æ¯æï¼sensorihealthcare@gmail.com
+    &nbsp;|&nbsp; å¨çº¿ææ¡£ï¼<a href="https://sensorihealthcare.github.io/InBedDetectionDoc/" style="color:#2c6fad;">InBedDetectionDoc</a>
   </div>
 
 </div><!-- /page -->
